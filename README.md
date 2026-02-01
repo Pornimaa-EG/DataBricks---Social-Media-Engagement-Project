@@ -1,7 +1,7 @@
 # DataBricks--- Social-Media-Engagement-Project
 This project demonstrates an end-to-end Databricks Lakehouse pipeline using a Social Media Engagement dataset. The pipeline is designed following the Medallion architecture (Bronze → Silver → Gold) and incorporates Delta Lake optimizations, orchestration, Unity Catalog governance, and ML model training.
 
-Key goals:
+# Key goals:
 
 Ingest raw social media data in a governed way
 
@@ -13,7 +13,7 @@ Train and track an ML model to predict engagement
 
 Automate the workflow using Databricks Jobs
 
-📂 Dataset
+# 📂 Dataset
 
 Source: Social Media Engagement Dataset (Kaggle)
 
@@ -33,7 +33,7 @@ shares
 
 timestamp
 
-🏗️ Architecture (Medallion Model)
+# 🏗️ Architecture (Medallion Model)
 +-----------------------------+
 |        Bronze Layer         |
 |-----------------------------|
@@ -67,7 +67,7 @@ timestamp
 | Engagement Rate Prediction |
 +-----------------------------+
 
-🧱 Medallion Layers Explained
+# 🧱 Medallion Layers Explained
 🥉 Bronze Layer
 
 Raw data ingestion from Unity Catalog Volumes
@@ -118,7 +118,7 @@ Content-type engagement
 
 Daily engagement trends
 
-⚙️ Delta Lake Features
+# ⚙️ Delta Lake Features
 
 ACID Transactions
 
@@ -130,7 +130,7 @@ File Compaction (OPTIMIZE)
 
 Data Skipping (ZORDER BY platform, post_date)
 
-🔄 Orchestration (Databricks Jobs)
+# 🔄 Orchestration (Databricks Jobs)
 
 The pipeline is orchestrated using Databricks Jobs with task dependencies.
 
@@ -155,7 +155,7 @@ ML model training with MLflow
 
 Retries and logs are enabled for monitoring.
 
-🔐 Governance (Unity Catalog)
+# 🔐 Governance (Unity Catalog)
 
 Data managed under a single catalog: social_media_catalog
 
@@ -173,7 +173,7 @@ Metadata captured using _metadata.file_path
 
 Note: This is a demo project, so permissions are granted only to the project user.
 
-📊 Analytics & Insights
+# 📊 Analytics & Insights
 
 Example insights generated:
 
@@ -191,7 +191,7 @@ Databricks SQL
 
 Power BI / other BI tools (via Databricks connector)
 
-🤖 Machine Learning (MLflow)
+# 🤖 Machine Learning (MLflow)
 
 Objective: Predict engagement rate of social media posts.
 
@@ -205,7 +205,7 @@ Experiments tracked using MLflow
 
 Parameters, metrics, and models logged
 
-▶️ How to Run the Project
+# ▶️ How to Run the Project
 
 Upload CSV file to Unity Catalog Volume
 
@@ -219,7 +219,7 @@ Run ML training notebook
 
 (Optional) Schedule pipeline using Databricks Jobs
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 
 Add data quality checks
 
